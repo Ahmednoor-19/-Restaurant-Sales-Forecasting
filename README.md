@@ -53,7 +53,6 @@ cd restaurant-sales-forecasting
 Install the necessary Python packages using requirements.txt.
 
 ```bash
-Copy code
 pip install -r requirements.txt
 ```
 
@@ -61,7 +60,6 @@ pip install -r requirements.txt
 Run the Flask application locally with the following command:
 
 ```bash
-Copy code
 python main.py
 ```
 The application will be accessible at http://127.0.0.1:5000.
@@ -87,27 +85,34 @@ Deploy the Application:
 
 Use the following commands to deploy the app to App Engine:
 ``` bash
-Copy code
 gcloud app deploy app.yaml
 ```
 After deployment, the app will be available via the GCP App Engine URL.
 
-Libraries Used
-Flask: Web framework to build the application.
-FB Prophet: Time series forecasting model used for predictions.
-pandas: Data processing and manipulation.
-matplotlib: For generating sales forecast plots.
-gunicorn: HTTP server for running the application in production.
-Usage
-Upload CSV Data: Upload your restaurant’s sales data in CSV format via the provided interface.
-Train the Model: Train the forecasting model using the uploaded data.
-View Forecast: Generate and view sales forecasts and visualize results.
-Future Enhancements
-More Models: Include other time series models like ARIMA or LSTM for performance comparison.
-Enhanced UI: Improve the user interface with more interactive data visualization.
-Better Forecast Accuracy: Fine-tune the model parameters to improve prediction accuracy.
-License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+## Libraries Used
+
+- **Flask**: A web framework used to build the application.
+- **FB Prophet**: A time series forecasting model utilized for generating predictions.
+- **pandas**: Used for data processing and manipulation.
+- **matplotlib**: Employed for generating sales forecast plots.
+- **gunicorn**: An HTTP server used to run the application in a production environment.
+
+## Usage
+
+1. **Upload CSV Data**: Use the provided interface to upload your restaurant’s sales data in CSV format.
+2. **Train the Model**: Train the forecasting model using the uploaded data by navigating to the `/train` route.
+3. **View Forecast**: Generate and view sales forecasts, and visualize the results by visiting the `/forecast` route.
+
+## Future Enhancements
+
+- **More Models**: Integrate additional time series models like ARIMA or LSTM for performance comparison.
+- **Enhanced UI**: Upgrade the user interface with more interactive data visualizations.
+- **Better Forecast Accuracy**: Fine-tune model parameters to enhance prediction accuracy.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more information.
+
 
 Contact
 For any questions or suggestions, please feel free to reach out to:
