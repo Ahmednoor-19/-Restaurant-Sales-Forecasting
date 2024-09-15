@@ -47,3 +47,10 @@ You can upload your own dataset in CSV format when using the application, follow
 ```bash
 git clone https://github.com/yourusername/restaurant-sales-forecasting.git
 cd restaurant-sales-forecasting
+
+## 2. Install Dependencies
+
+Install the necessary Python packages using `requirements.txt`.
+
+```bash
+pip install -r requirements.txt
